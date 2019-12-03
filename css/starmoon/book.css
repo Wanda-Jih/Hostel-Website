@@ -1,0 +1,203 @@
+﻿.step-progress-bar {
+    counter-reset: step;
+}
+
+.step-progress-bar li {
+    list-style-type: none;
+    float: left;
+    width: 33.33%;
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+}
+
+.step-progress-bar li:after {
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 1px;
+    background-color: #ddd;
+    top: calc(33px / 2);
+    left: -45%;
+    z-index: 0;
+}
+
+
+.step-progress-bar li:before {
+    content: counter(step);
+    counter-increment: step;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #ddd;
+    display: block;
+    text-align: center;
+    margin: 0 auto 10px auto;
+    border-radius: 50%;
+    background-color:#fff;
+}
+
+.step-progress-bar li:first-child:after {
+    content:none;
+}
+
+.step-progress-bar li.active {
+    color: #efc110;
+}
+
+.section{
+    padding:10px auto;
+}
+
+.checkDate {
+    margin:auto auto auto 30%;
+}
+
+.checkDate label {
+    display: inline-block;
+    margin-bottom: .5rem;
+}
+
+.title-form-date{
+    font-size:25px;
+}
+
+
+
+/*<!-- Book.html -->*/
+
+#book {
+    background-color: #ffffff;
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    position: relative;
+}
+
+#book-room-type {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    position: relative;
+}
+
+#book-room-type .about-img img {
+    border: 8px solid #ffffff;
+    position: absolute;
+    left: -120px;
+    bottom: -325px;
+    padding: 12px;
+}
+
+#book-room-type .about-thumb {
+    background: #ffffff;
+    border-radius: 4px;
+    padding: 50px;
+    position: relative;
+}
+
+#book-room-type .about-thumb p {
+    margin: 0 15% 10px;
+    text-align: initial;
+}
+
+#book-room-type .about-thumb .count-poeple img {
+    width: 25px;
+    height: 30px;
+}
+
+#book-room-type .about-thumb .count-bed img {
+    width: 40px;
+    height: 40px;
+}
+
+#book-room-type .about-thumb input {
+    background-color: #304352 !important;
+    color: white !important;
+    width: 20%;
+    margin: 10% auto auto 38%;
+}
+
+
+/*<!-- BookConfirm.html -->*/
+#book-order-list {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 120px;
+    position: relative;
+}
+
+#book-order-list ul li {
+    display: inline;
+    margin: 5px 100px 5px 100px;
+    text-align: left;
+}
+
+#book-order-list table {
+    border: 0px;
+    margin-left: 20%;
+    margin-right: auto;
+    width: 64%;
+    font-size: 25px;
+}
+
+#book-order-list table td, th {
+    padding: 10px;
+    text-align: inherit;
+}
+
+#book-order-list table td {
+    font-size: 20px;
+}
+
+
+/*<!-- BookFillForm.html -->*/
+#fill-form {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 120px;
+    position: relative;
+}
+
+#fill-form ul li {
+    display: inline;
+    margin: 5px 100px 5px 100px;
+    text-align: left;
+}
+
+#fill-form input, select, textarea {
+    width: 200px;
+    font-size: 15px;
+    margin: 10px;
+    outline: none;
+    border: none;
+    padding: 10px;
+    margin-left: -3%;
+}
+
+#fill-form textarea {
+    height: 100px;
+    resize: none;
+    /* 固定元素尺寸 */
+}
+
+#fill-form form {
+    margin: auto 18%;
+}
+
+#fill-form .fill-information span {
+    margin-right: 20%;
+}
+
+/*<!-- BookEmail.html -->*/
+
+#email {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 80px;
+    position: relative;
+}
